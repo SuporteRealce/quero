@@ -589,12 +589,29 @@ footer p {
 	margin: 15px 0;
 	outline: none;
 	padding-left: 10px;
+	border: 1px solid #ccc;
 }
 .input-local textarea {
 	height: 100px;
 	padding-top: 10px;
 	padding-left: 10px; 
 }
+
+.input-local input:focus,
+.input-local select:focus,
+.input-local textarea:focus {
+	border: 1px solid var(--cor-hover);
+	transition: all .3s linear;
+	color: var(--cor-hover);
+}
+
+.input-local input:focus::placeholder,
+.input-local select:focus::placeholder,
+.input-local textarea:focus::placeholder {
+	color: var(--cor-hover);
+	transition: all .3s linear;
+}
+
 .input-local select {
 	margin-top: 15px;
 }
