@@ -582,13 +582,26 @@ footer p {
 	letter-spacing: 1px;
 }
 /*Página Localizacao *******************************/
-.input-local  input, select {
+.input-local  input, select, textarea {
 	width: 100%;
 	height: 50px;
 	display: block;
 	margin: 15px 0;
 	outline: none;
 	padding-left: 10px;
+}
+.input-local textarea {
+	height: 100px;
+	padding-top: 10px;
+	padding-left: 10px; 
+}
+.input-local select {
+	margin-top: 15px;
+}
+@media screen and (max-width: 780px){
+	.input-local select {
+		margin-top: 0px !important;
+	}
 }
 .input-local input[type="button"] {
 	background-color: var(--cor-hover);
@@ -743,4 +756,17 @@ footer p {
 	width: 100%;
 	border: none;
 	outline: none;
+}
+
+.itens-principal h1 {
+	font-size: 26px;
+	letter-spacing: 1px;
+	color: #333;
+	margin: 20px 0;
+}
+.itens-principal .item-principal-p {
+	font-size: 15px;
+	color: #808080;
+	letter-spacing: 1px;
+	margin: 35px 0;
 }
